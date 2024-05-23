@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+//index.js에 연동을 시켜준다.
 
 //setting
 
@@ -9,6 +10,6 @@
 @import "setting/mixin";
 @import "setting/common";
 
-//index.js에 연동을 시켜준다.
 
 @import "section/layout";
+@import "section/header";
