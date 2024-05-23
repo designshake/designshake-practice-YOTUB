@@ -29,13 +29,13 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; 
   -webkit-text-size-adjust: 100%;
 
-  @media(max-width: 800px) {
+  @media screen and (max-width: 800px) {
       font-size: 12px;
       line-height: 1.4;
-      color:#ffcc00;
+      color:var(--red);
   }
 }
 
