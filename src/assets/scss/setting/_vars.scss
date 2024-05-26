@@ -33,9 +33,13 @@
   -webkit-text-size-adjust: 100%;
 
   @media screen and (max-width: 800px) {
-      font-size: 12px;
-      line-height: 1.4;
-      color:var(--red);
-  }
+      .header__menu {
+        font-size: 1.2rem;
+      }
+      .keyword a{
+        line-height: 1.4;
+        color:var(--red);
+      }
+     } 
 }
 
