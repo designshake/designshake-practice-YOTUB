@@ -2,6 +2,7 @@ import React from 'react'
 
 import { headerMenus, searchKeyword } from '../../assets/data/header'
 import { Link, useLocation } from 'react-router-dom'
+//className=keyword는 라운드 형태의 txt버튼
 
 const Menu = () => {
   const location = useLocation();

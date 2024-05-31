@@ -11,10 +11,12 @@ import Developer from '../components/contents/Developer'
 
 
 //{props.title && <title>{props.title}</title>} title을 받아온다.
+//content파일은 앞에 홈메인에 보이는 대표적 짧은 페이지들을 말한다. 본페이지는 pages에 있다.
+//전체페이지가 아닌 대표적으로 메인에 짧게 보여지는 페이지.
 
 export const Home = () => {
   return (
-   <div>
+   <>
     <Developer />
     <Channel />
     <Gsap />
@@ -24,7 +26,7 @@ export const Home = () => {
     <Wedb />
     <Website />
     <Youtube />
-   </div>
+   </>
   )
 }
 

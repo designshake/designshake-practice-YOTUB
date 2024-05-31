@@ -37,7 +37,7 @@ const App = () => {
                         <Route path="*" element={<Not />} />
                     </Routes>
                 </Main>
-                <Footer />
+            <Footer />
         </BrowserRouter>
     );
 }
