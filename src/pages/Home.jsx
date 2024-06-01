@@ -17,15 +17,15 @@ import Developer from '../components/contents/Developer'
 export const Home = () => {
   return (
    <>
-    <Developer />
-    <Channel />
-    <Gsap />
-    <Port />
     <Today />
-    <Video />
+    <Developer />
     <Wedb />
     <Website />
+    <Gsap />
+    <Port />
     <Youtube />
+    <Channel />
+    <Video />
    </>
   )
 }
