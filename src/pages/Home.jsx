@@ -8,7 +8,7 @@ import Main from '../components/section/Main'
 
 export const Home = () => {
   return (
-    <Main>
+    <Main title='에버랜드3MK' descriptiion='이것이 메인페이지입니다.'>
       homeeeee
     </Main>
   )
