@@ -13,7 +13,7 @@
   padding:2rem;
 
   .today {
-    background-color: #16e4c1;
+    background-color: #e41616;
     padding:2px 50px;
     border-radius: 20px;
     text-transform: uppercase;
@@ -22,14 +22,15 @@
   .title {
     font-size: 2rem;
     margin-bottom:1rem;
+    @include line-one;
   }
   .desc {
     margin-bottom:1rem;
     color: var(--white200);
+    @include line(4);
 
   }
   .info{
-
     .author {
       font-size: 1rem;
       margin-right:10px;
@@ -43,5 +44,43 @@
       color:var(--white200);
       font-weight:400;
     }
+  }
+}
+
+@media (max-width:1700px) {
+  .today__inner {
+    .today__text {
+      //width:calc(100% - 500px);
+      .desc {
+        @include line(2);
+      }
+    }
+  }
+}
+
+@media (max-width:1200px) {
+  .today__inner {
+    flex-direction: column;
+  }
+  .today__thumb {
+    width:100%;
+  }
+  .today__text {
+    width:100%;
+      .desc {
+        display:none;
+      }
+      .title {
+        font-size:24px;
+      }
+  }
+  
+}
+
+
+@media (max-width:800px) {
+  #todayPage,
+  #tdoay {
+    margin-top:80px;
   }
 }

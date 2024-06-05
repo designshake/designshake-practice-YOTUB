@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { snsLink } from '../../assets/data/header'
+import { snsLink } from '../../data/header'
 //<></> 없애는건 매개변수로 쓰기위함.
 
 const Sns = () => {
