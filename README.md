@@ -30,3 +30,45 @@ YouTube Data API를 활용하여 외부 데이터를 가져오는 방법을 익�
 
 240519 GIT 주소
 https://github.com/designshake/designshake-practice-YOTUB.git
+
+
+swiper에서 참고:VideoSlider.jsx
+bareakpoints={{
+  640: {
+    slidesPerView:2,
+    spaceBetween:20
+  },
+  768:{
+    slidesPerView:2,
+    spaceBetween:20
+  },
+  1024:{
+    slidesPerView:2,
+    spaceBetween:20
+  }
+}}
+
+각 해상도 사이즈별로 몇개 보이게 할지, 간격도 맞춰줄 수 있다.
+slidesPerView:2,    //2개로 보이겠다.
+spaceBetween:20     //간격을 20px로 하겠다.
+
+swiper 부드럽게 나오는 방법. videoslider.jsx
+
+const VideoSlider = ({id, title, videos}) => {
+-------------------------------------------------------------
+
+   const [loading, setLoading] = useState(true);
+   
+   useEffect(() => {
+      setTimeout(() => {
+         setLoading(false)
+      }, 500)
+   }, []);
+
+   변수(loading) 함수값(setLoading)
+   변수에 대한 함수값(동작)
+   그 변수안에 true 
+   그럼 useEffect가 실행되면 0.5초 뒤에 setloading은 false에서 true로 바뀐다.
+
+   상단에 
+   import React, {useEffect, useState} from  해서 설정해줘야함.

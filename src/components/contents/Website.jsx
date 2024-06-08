@@ -1,5 +1,6 @@
 import React from 'react'
-import { webdText } from '../../data/webd'
+
+import { websiteText } from '../../data/website'
 import { Link } from 'react-router-dom'
 
 const Website = () => {
@@ -7,7 +8,7 @@ const Website = () => {
     <section id='website'>
       <h2>웹표준사이트 기초 다지기</h2>
       <div className='video__inner'>
-          {webdText.map ((video, key) => (
+          {websiteText.map ((video, key) => (
             <div className='video' key={key}>
               <div className='video__thumb play__icon'>
                 <Link to={`/video/${video.videoId}`}>
