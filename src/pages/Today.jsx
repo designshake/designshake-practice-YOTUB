@@ -4,6 +4,8 @@ import Main from '../components/section/Main'
 import { todayText } from '../data/today'
 import { Link } from 'react-router-dom'
 
+//화면뜰때 부드럽게 띄우기
+//3초에 부드럽게 띄워라.
 const Today = () => {
     const [loading, setLoading] = useState(true); 
 
@@ -13,6 +15,7 @@ const Today = () => {
         }, 300);
     }, []);
 
+    //이 로딩의 값에 따라서 is로 혹은 isloaded를 붙여줄건지.
     const todayPageClass = loading ? 'isLoading' : 'isLoaded';
 
     return (
@@ -20,6 +23,7 @@ const Today = () => {
             title = "추천 영상"
             description="오늘의 추천 유튜브 영상입니다.">
             
+            {/* 여기다 띄울때 className을 붙여서 구동된다.  */}
             <section id='todayPage' className={todayPageClass}>
                 <h2>🥰 오늘의 추천 영상입니다.</h2>
 
