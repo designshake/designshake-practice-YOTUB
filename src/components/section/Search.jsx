@@ -1,6 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { useNavigate } from 'react-router-dom';
 
+//0613.검색서치창에 타이핑 후 엔터쳤을때의 검색결과값.
 const Search = () => {
+  
+  const [searchKeyword, setSearchKeyword] = useState('');
+  const navigate = useNavigate();
+
+  const handleSearch = () => {
+    if (searchKeyword){
+      navigate(`/search/${searchKeyword}`);
+      setSearchKeyword('');
+    }
+  }
+
   return (
     <div id="search">
       <div className='search__inner'>
@@ -14,6 +27,12 @@ const Search = () => {
           autoComplete='off'
           className='search__input'
           placeholder='검색어를 입력하세요'
+          onChange={e => setSearchKeyword(e.target.value)}
+          onKeyDown={e => {
+            if(e.key === 'Enter') {
+                handleSearch();
+            }
+          }}
         />
       </div>
     </div>
