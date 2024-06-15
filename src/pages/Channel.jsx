@@ -2,6 +2,8 @@ import React from 'react'
 import Main from '../components/section/Main'
 
 const Channel = () => {
+
+
   return (
     <Main 
       title='채널3MK' 

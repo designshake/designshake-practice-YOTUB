@@ -4,14 +4,6 @@ import VideoSearch from '../components/video/VideoSearch'
 
 const Search = () => {
 
-  // const {searchId} = useParams();
-  // const [videos, setVideos] = useState([]);
-
-  // useEffect(() => {
-  //   fetch(``)
-
-  // }, [searchId]);
-
   return (
     <Main 
       title='서치페이지'
